@@ -1,0 +1,71 @@
+.container {
+    display: flex;
+    border: 1px solid #ddd;
+    border-radius: 16px;
+    max-width: fit-content;
+    padding: 2px 8px;
+}
+
+.clockContainer {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    gap: 2px;
+    padding: 8px;
+    font-size: larger;
+}
+
+.hour {
+    composes: clockContainer;
+}
+
+.hour::after {
+    content: "h";
+    font-size: small;
+}
+
+.minute {
+    composes: clockContainer;
+}
+
+.minute::after {
+    content: "m";
+    font-size: small;
+}
+
+.second {
+    composes: clockContainer;
+}
+
+.second::after {
+    content: "s";
+    font-size: small;
+}
+
+.milliSecond {
+    composes: clockContainer;
+    font-size: medium;
+    color: #bbb;
+}
+
+.milliSecond::after {
+    content: "ms";
+    font-size: small;
+}
+
+.separator {
+    border: 1px dashed #ddd;
+}
+
+.topContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
+
+.buttonContainer {
+    display: flex;
+    gap: 8px;
+}
+
