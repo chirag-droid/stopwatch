@@ -1,6 +1,6 @@
 .container {
     display: flex;
-    border: 1px solid #ddd;
+    border: 1px solid #aaa;
     border-radius: 16px;
     max-width: fit-content;
     padding: 2px 8px;
@@ -54,7 +54,7 @@
 }
 
 .separator {
-    border: 1px dashed #ddd;
+    border: 1px dashed #888;
 }
 
 .topContainer {
